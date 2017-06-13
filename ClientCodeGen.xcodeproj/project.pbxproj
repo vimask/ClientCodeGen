@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE5FF3051EF027C100AF9984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3041EF027C100AF9984 /* AppDelegate.swift */; };
+		EE5FF3071EF027C100AF9984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3061EF027C100AF9984 /* ViewController.swift */; };
+		EE5FF3091EF027C100AF9984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3081EF027C100AF9984 /* Assets.xcassets */; };
+		EE5FF30C1EF027C100AF9984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF30A1EF027C100AF9984 /* Main.storyboard */; };
+		EE5FF31B1EF03D3100AF9984 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */; };
+		EE5FF31C1EF03D3100AF9984 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */; };
+		EE5FF3241EF03F0D00AF9984 /* SharedUtilityMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */; };
+		EE5FF3251EF03F0D00AF9984 /* FilePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */; };
+		EE5FF3261EF03F0D00AF9984 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */; };
+		EE5FF3271EF03F0D00AF9984 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */; };
+		EE5FF32D1EF03F1B00AF9984 /* FileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */; };
+		EE5FF32E1EF03F1B00AF9984 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */; };
+		EE5FF32F1EF03F1B00AF9984 /* FileContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */; };
+		EE5FF3301EF03F1B00AF9984 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32B1EF03F1A00AF9984 /* Property.swift */; };
+		EE5FF3311EF03F1B00AF9984 /* HeaderFileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */; };
+		EE5FF3381EF03F3200AF9984 /* LangModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3321EF03F3100AF9984 /* LangModel.swift */; };
+		EE5FF3391EF03F3200AF9984 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3331EF03F3100AF9984 /* DataType.swift */; };
+		EE5FF33A1EF03F3200AF9984 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3341EF03F3100AF9984 /* Author.swift */; };
+		EE5FF33B1EF03F3200AF9984 /* HeaderFileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */; };
+		EE5FF33C1EF03F3200AF9984 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3361EF03F3200AF9984 /* Constructor.swift */; };
+		EE5FF33D1EF03F3200AF9984 /* UtilityMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */; };
+		EE5FF34E1EF0403B00AF9984 /* Swift-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */; };
+		EE5FF34F1EF0403B00AF9984 /* Swift-Struct-Gloss.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */; };
+		EE5FF3501EF0403B00AF9984 /* ObjectiveC-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */; };
+		EE5FF3511EF0403B00AF9984 /* Java-Android Gson.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */; };
+		EE5FF3521EF0403B00AF9984 /* Swift-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3431EF0403A00AF9984 /* Swift-Class.json */; };
+		EE5FF3531EF0403B00AF9984 /* Java-Android.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3441EF0403A00AF9984 /* Java-Android.json */; };
+		EE5FF3541EF0403B00AF9984 /* ObjectiveC-Mac.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */; };
+		EE5FF3551EF0403B00AF9984 /* Swift-Mappable.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */; };
+		EE5FF3561EF0403B00AF9984 /* Java-Android Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */; };
+		EE5FF3571EF0403B00AF9984 /* ObjectiveC-CoreData-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */; };
+		EE5FF3581EF0403B00AF9984 /* Swift-Struct.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */; };
+		EE5FF3591EF0403B00AF9984 /* SwiftyJSON-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */; };
+		EE5FF35A1EF0403B00AF9984 /* Swift-Struct-Unbox.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */; };
+		EE5FF35B1EF0403B00AF9984 /* Swift-CoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */; };
+		EE5FF35C1EF0403B00AF9984 /* ObjectiveC-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE5FF3011EF027C000AF9984 /* ClientCodeGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientCodeGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5FF3041EF027C100AF9984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE5FF3061EF027C100AF9984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE5FF3081EF027C100AF9984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE5FF30B1EF027C100AF9984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE5FF30D1EF027C100AF9984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5FF30E1EF027C100AF9984 /* ClientCodeGen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClientCodeGen.entitlements; sourceTree = "<group>"; };
+		EE5FF3161EF03D2F00AF9984 /* ClientCodeGen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClientCodeGen-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoodleLineNumberView.m; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberView.m"; sourceTree = "<group>"; };
+		EE5FF3181EF03D3000AF9984 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoodleLineNumberView.h; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberView.h"; sourceTree = "<group>"; };
+		EE5FF3191EF03D3000AF9984 /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoodleLineNumberMarker.h; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberMarker.h"; sourceTree = "<group>"; };
+		EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoodleLineNumberMarker.m; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberMarker.m"; sourceTree = "<group>"; };
+		EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedUtilityMethods.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/SharedUtilityMethods.swift"; sourceTree = "<group>"; };
+		EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilePreviewCell.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FilePreviewCell.swift"; sourceTree = "<group>"; };
+		EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/ApiClient.swift"; sourceTree = "<group>"; };
+		EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/StringExtension.swift"; sourceTree = "<group>"; };
+		EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileRepresenter.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FileRepresenter.swift"; sourceTree = "<group>"; };
+		EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedConstants.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/SharedConstants.swift"; sourceTree = "<group>"; };
+		EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileContentBuilder.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FileContentBuilder.swift"; sourceTree = "<group>"; };
+		EE5FF32B1EF03F1A00AF9984 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Property.swift"; sourceTree = "<group>"; };
+		EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderFileRepresenter.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/HeaderFileRepresenter.swift"; sourceTree = "<group>"; };
+		EE5FF3321EF03F3100AF9984 /* LangModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LangModel.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/LangModel.swift"; sourceTree = "<group>"; };
+		EE5FF3331EF03F3100AF9984 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataType.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/DataType.swift"; sourceTree = "<group>"; };
+		EE5FF3341EF03F3100AF9984 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Author.swift"; sourceTree = "<group>"; };
+		EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderFileData.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/HeaderFileData.swift"; sourceTree = "<group>"; };
+		EE5FF3361EF03F3200AF9984 /* Constructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Constructor.swift"; sourceTree = "<group>"; };
+		EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UtilityMethod.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/UtilityMethod.swift"; sourceTree = "<group>"; };
+		EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Realm.json"; sourceTree = "<group>"; };
+		EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct-Gloss.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct-Gloss.json"; sourceTree = "<group>"; };
+		EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-iOS.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-iOS.json"; sourceTree = "<group>"; };
+		EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android Gson.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android Gson.json"; sourceTree = "<group>"; };
+		EE5FF3431EF0403A00AF9984 /* Swift-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Class.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Class.json"; sourceTree = "<group>"; };
+		EE5FF3441EF0403A00AF9984 /* Java-Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android.json"; sourceTree = "<group>"; };
+		EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-Mac.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-Mac.json"; sourceTree = "<group>"; };
+		EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Mappable.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Mappable.json"; sourceTree = "<group>"; };
+		EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android Realm.json"; sourceTree = "<group>"; };
+		EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-CoreData-iOS.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-CoreData-iOS.json"; sourceTree = "<group>"; };
+		EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct.json"; sourceTree = "<group>"; };
+		EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "SwiftyJSON-Class.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/SwiftyJSON-Class.json"; sourceTree = "<group>"; };
+		EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct-Unbox.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct-Unbox.json"; sourceTree = "<group>"; };
+		EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-CoreData.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-CoreData.json"; sourceTree = "<group>"; };
+		EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-Realm.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE5FF2FE1EF027C000AF9984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE5FF2F81EF027C000AF9984 = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3031EF027C000AF9984 /* ClientCodeGen */,
+				EE5FF3021EF027C000AF9984 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE5FF3021EF027C000AF9984 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3011EF027C000AF9984 /* ClientCodeGen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE5FF3031EF027C000AF9984 /* ClientCodeGen */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF33E1EF0402D00AF9984 /* Supported Languages */,
+				EE5FF31F1EF03EED00AF9984 /* Lang data models */,
+				EE5FF31E1EF03EC800AF9984 /* File content generators */,
+				EE5FF3141EF03CDF00AF9984 /* Third party libraries */,
+				EE5FF31D1EF03EBD00AF9984 /* Misc */,
+				EE5FF3041EF027C100AF9984 /* AppDelegate.swift */,
+				EE5FF3061EF027C100AF9984 /* ViewController.swift */,
+				EE5FF3081EF027C100AF9984 /* Assets.xcassets */,
+				EE5FF30A1EF027C100AF9984 /* Main.storyboard */,
+				EE5FF30D1EF027C100AF9984 /* Info.plist */,
+				EE5FF30E1EF027C100AF9984 /* ClientCodeGen.entitlements */,
+			);
+			path = ClientCodeGen;
+			sourceTree = "<group>";
+		};
+		EE5FF3141EF03CDF00AF9984 /* Third party libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3151EF03D0D00AF9984 /* Noodle Line Number */,
+			);
+			path = "Third party libraries";
+			sourceTree = "<group>";
+		};
+		EE5FF3151EF03D0D00AF9984 /* Noodle Line Number */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3191EF03D3000AF9984 /* NoodleLineNumberMarker.h */,
+				EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */,
+				EE5FF3181EF03D3000AF9984 /* NoodleLineNumberView.h */,
+				EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */,
+				EE5FF3161EF03D2F00AF9984 /* ClientCodeGen-Bridging-Header.h */,
+			);
+			path = "Noodle Line Number";
+			sourceTree = "<group>";
+		};
+		EE5FF31D1EF03EBD00AF9984 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */,
+				EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */,
+				EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */,
+				EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		EE5FF31E1EF03EC800AF9984 /* File content generators */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */,
+				EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */,
+				EE5FF32B1EF03F1A00AF9984 /* Property.swift */,
+				EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */,
+				EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */,
+			);
+			path = "File content generators";
+			sourceTree = "<group>";
+		};
+		EE5FF31F1EF03EED00AF9984 /* Lang data models */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3361EF03F3200AF9984 /* Constructor.swift */,
+				EE5FF3331EF03F3100AF9984 /* DataType.swift */,
+				EE5FF3321EF03F3100AF9984 /* LangModel.swift */,
+				EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */,
+				EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */,
+				EE5FF3341EF03F3100AF9984 /* Author.swift */,
+			);
+			path = "Lang data models";
+			sourceTree = "<group>";
+		};
+		EE5FF33E1EF0402D00AF9984 /* Supported Languages */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */,
+				EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */,
+				EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */,
+				EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */,
+				EE5FF3441EF0403A00AF9984 /* Java-Android.json */,
+				EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */,
+				EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */,
+				EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */,
+				EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */,
+				EE5FF3431EF0403A00AF9984 /* Swift-Class.json */,
+				EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */,
+				EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */,
+				EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */,
+				EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */,
+				EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */,
+			);
+			path = "Supported Languages";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE5FF3001EF027C000AF9984 /* ClientCodeGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5FF3111EF027C100AF9984 /* Build configuration list for PBXNativeTarget "ClientCodeGen" */;
+			buildPhases = (
+				EE5FF2FD1EF027C000AF9984 /* Sources */,
+				EE5FF2FE1EF027C000AF9984 /* Frameworks */,
+				EE5FF2FF1EF027C000AF9984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClientCodeGen;
+			productName = ClientCodeGen;
+			productReference = EE5FF3011EF027C000AF9984 /* ClientCodeGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE5FF2F91EF027C000AF9984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Vinh Vo";
+				TargetAttributes = {
+					EE5FF3001EF027C000AF9984 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = EE5FF2FC1EF027C000AF9984 /* Build configuration list for PBXProject "ClientCodeGen" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE5FF2F81EF027C000AF9984;
+			productRefGroup = EE5FF3021EF027C000AF9984 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE5FF3001EF027C000AF9984 /* ClientCodeGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE5FF2FF1EF027C000AF9984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5FF3591EF0403B00AF9984 /* SwiftyJSON-Class.json in Resources */,
+				EE5FF3521EF0403B00AF9984 /* Swift-Class.json in Resources */,
+				EE5FF3531EF0403B00AF9984 /* Java-Android.json in Resources */,
+				EE5FF34E1EF0403B00AF9984 /* Swift-Realm.json in Resources */,
+				EE5FF3091EF027C100AF9984 /* Assets.xcassets in Resources */,
+				EE5FF3561EF0403B00AF9984 /* Java-Android Realm.json in Resources */,
+				EE5FF35A1EF0403B00AF9984 /* Swift-Struct-Unbox.json in Resources */,
+				EE5FF35C1EF0403B00AF9984 /* ObjectiveC-Realm.json in Resources */,
+				EE5FF30C1EF027C100AF9984 /* Main.storyboard in Resources */,
+				EE5FF35B1EF0403B00AF9984 /* Swift-CoreData.json in Resources */,
+				EE5FF3581EF0403B00AF9984 /* Swift-Struct.json in Resources */,
+				EE5FF3551EF0403B00AF9984 /* Swift-Mappable.json in Resources */,
+				EE5FF3541EF0403B00AF9984 /* ObjectiveC-Mac.json in Resources */,
+				EE5FF3511EF0403B00AF9984 /* Java-Android Gson.json in Resources */,
+				EE5FF3501EF0403B00AF9984 /* ObjectiveC-iOS.json in Resources */,
+				EE5FF3571EF0403B00AF9984 /* ObjectiveC-CoreData-iOS.json in Resources */,
+				EE5FF34F1EF0403B00AF9984 /* Swift-Struct-Gloss.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE5FF2FD1EF027C000AF9984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5FF32D1EF03F1B00AF9984 /* FileRepresenter.swift in Sources */,
+				EE5FF3391EF03F3200AF9984 /* DataType.swift in Sources */,
+				EE5FF3261EF03F0D00AF9984 /* ApiClient.swift in Sources */,
+				EE5FF31B1EF03D3100AF9984 /* NoodleLineNumberView.m in Sources */,
+				EE5FF3381EF03F3200AF9984 /* LangModel.swift in Sources */,
+				EE5FF3311EF03F1B00AF9984 /* HeaderFileRepresenter.swift in Sources */,
+				EE5FF3071EF027C100AF9984 /* ViewController.swift in Sources */,
+				EE5FF3251EF03F0D00AF9984 /* FilePreviewCell.swift in Sources */,
+				EE5FF3271EF03F0D00AF9984 /* StringExtension.swift in Sources */,
+				EE5FF33B1EF03F3200AF9984 /* HeaderFileData.swift in Sources */,
+				EE5FF3301EF03F1B00AF9984 /* Property.swift in Sources */,
+				EE5FF33D1EF03F3200AF9984 /* UtilityMethod.swift in Sources */,
+				EE5FF33A1EF03F3200AF9984 /* Author.swift in Sources */,
+				EE5FF32E1EF03F1B00AF9984 /* SharedConstants.swift in Sources */,
+				EE5FF3051EF027C100AF9984 /* AppDelegate.swift in Sources */,
+				EE5FF33C1EF03F3200AF9984 /* Constructor.swift in Sources */,
+				EE5FF3241EF03F0D00AF9984 /* SharedUtilityMethods.swift in Sources */,
+				EE5FF32F1EF03F1B00AF9984 /* FileContentBuilder.swift in Sources */,
+				EE5FF31C1EF03D3100AF9984 /* NoodleLineNumberMarker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE5FF30A1EF027C100AF9984 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE5FF30B1EF027C100AF9984 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE5FF30F1EF027C100AF9984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE5FF3101EF027C100AF9984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		EE5FF3121EF027C100AF9984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ClientCodeGen/ClientCodeGen.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QWD8B2FB9G;
+				INFOPLIST_FILE = ClientCodeGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimask.ClientCodeGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClientCodeGen/Third party libraries/Noodle Line Number/ClientCodeGen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EE5FF3131EF027C100AF9984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ClientCodeGen/ClientCodeGen.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QWD8B2FB9G;
+				INFOPLIST_FILE = ClientCodeGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimask.ClientCodeGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClientCodeGen/Third party libraries/Noodle Line Number/ClientCodeGen-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE5FF2FC1EF027C000AF9984 /* Build configuration list for PBXProject "ClientCodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5FF30F1EF027C100AF9984 /* Debug */,
+				EE5FF3101EF027C100AF9984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5FF3111EF027C100AF9984 /* Build configuration list for PBXNativeTarget "ClientCodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5FF3121EF027C100AF9984 /* Debug */,
+				EE5FF3131EF027C100AF9984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE5FF2F91EF027C000AF9984 /* Project object */;
+}
