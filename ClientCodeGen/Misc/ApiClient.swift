@@ -3,7 +3,7 @@
 //  JSONExport
 //
 //  Created by Vinh Vo on 4/19/17.
-//  Copyright © 2017 Ahmed Ali. All rights reserved.
+//  Copyright © 2017 Vinh Vo. All rights reserved.
 //
 
 import Foundation
