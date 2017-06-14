@@ -7,45 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4692911EF173EA002A763C /* Swift-Struct-Gloss.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */; };
+		EE4692921EF173EA002A763C /* ObjectiveC-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */; };
+		EE4692931EF173EA002A763C /* Java-Android Gson.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692841EF173EA002A763C /* Java-Android Gson.json */; };
+		EE4692941EF173EA002A763C /* Java-Android Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692851EF173EA002A763C /* Java-Android Realm.json */; };
+		EE4692951EF173EA002A763C /* Java-Android.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692861EF173EA002A763C /* Java-Android.json */; };
+		EE4692961EF173EA002A763C /* ObjectiveC-CoreData-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */; };
+		EE4692971EF173EA002A763C /* ObjectiveC-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */; };
+		EE4692981EF173EA002A763C /* ObjectiveC-Mac.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */; };
+		EE4692991EF173EA002A763C /* Swift-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928A1EF173EA002A763C /* Swift-Realm.json */; };
+		EE46929A1EF173EA002A763C /* Swift-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928B1EF173EA002A763C /* Swift-Class.json */; };
+		EE46929B1EF173EA002A763C /* Swift-CoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928C1EF173EA002A763C /* Swift-CoreData.json */; };
+		EE46929C1EF173EA002A763C /* Swift-Mappable.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928D1EF173EA002A763C /* Swift-Mappable.json */; };
+		EE46929D1EF173EA002A763C /* Swift-Struct.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928E1EF173EA002A763C /* Swift-Struct.json */; };
+		EE46929E1EF173EA002A763C /* Swift-Struct-Unbox.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928F1EF173EA002A763C /* Swift-Struct-Unbox.json */; };
+		EE46929F1EF173EA002A763C /* SwiftyJSON-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692901EF173EA002A763C /* SwiftyJSON-Class.json */; };
+		EE4692A61EF173F7002A763C /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A01EF173F7002A763C /* Constructor.swift */; };
+		EE4692A71EF173F7002A763C /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A11EF173F7002A763C /* DataType.swift */; };
+		EE4692A81EF173F7002A763C /* LangModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A21EF173F7002A763C /* LangModel.swift */; };
+		EE4692A91EF173F7002A763C /* UtilityMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A31EF173F7002A763C /* UtilityMethod.swift */; };
+		EE4692AA1EF173F7002A763C /* HeaderFileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A41EF173F7002A763C /* HeaderFileData.swift */; };
+		EE4692AB1EF173F7002A763C /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692A51EF173F7002A763C /* Author.swift */; };
+		EE4692B11EF1740C002A763C /* FileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692AC1EF1740C002A763C /* FileRepresenter.swift */; };
+		EE4692B21EF1740C002A763C /* HeaderFileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692AD1EF1740C002A763C /* HeaderFileRepresenter.swift */; };
+		EE4692B31EF1740C002A763C /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692AE1EF1740C002A763C /* Property.swift */; };
+		EE4692B41EF1740C002A763C /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692AF1EF1740C002A763C /* SharedConstants.swift */; };
+		EE4692B51EF1740C002A763C /* FileContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692B01EF1740C002A763C /* FileContentBuilder.swift */; };
+		EE4692BB1EF17421002A763C /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4692B71EF17421002A763C /* NoodleLineNumberMarker.m */; };
+		EE4692BC1EF17421002A763C /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4692B91EF17421002A763C /* NoodleLineNumberView.m */; };
+		EE4692C11EF17434002A763C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692BD1EF17434002A763C /* StringExtension.swift */; };
+		EE4692C21EF17434002A763C /* FilePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692BE1EF17434002A763C /* FilePreviewCell.swift */; };
+		EE4692C31EF17434002A763C /* SharedUtilityMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692BF1EF17434002A763C /* SharedUtilityMethods.swift */; };
+		EE4692C41EF17434002A763C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4692C01EF17434002A763C /* ApiClient.swift */; };
 		EE5FF3051EF027C100AF9984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3041EF027C100AF9984 /* AppDelegate.swift */; };
 		EE5FF3071EF027C100AF9984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3061EF027C100AF9984 /* ViewController.swift */; };
 		EE5FF3091EF027C100AF9984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3081EF027C100AF9984 /* Assets.xcassets */; };
 		EE5FF30C1EF027C100AF9984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF30A1EF027C100AF9984 /* Main.storyboard */; };
-		EE5FF31B1EF03D3100AF9984 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */; };
-		EE5FF31C1EF03D3100AF9984 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */; };
-		EE5FF3241EF03F0D00AF9984 /* SharedUtilityMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */; };
-		EE5FF3251EF03F0D00AF9984 /* FilePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */; };
-		EE5FF3261EF03F0D00AF9984 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */; };
-		EE5FF3271EF03F0D00AF9984 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */; };
-		EE5FF32D1EF03F1B00AF9984 /* FileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */; };
-		EE5FF32E1EF03F1B00AF9984 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */; };
-		EE5FF32F1EF03F1B00AF9984 /* FileContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */; };
-		EE5FF3301EF03F1B00AF9984 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32B1EF03F1A00AF9984 /* Property.swift */; };
-		EE5FF3311EF03F1B00AF9984 /* HeaderFileRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */; };
-		EE5FF3381EF03F3200AF9984 /* LangModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3321EF03F3100AF9984 /* LangModel.swift */; };
-		EE5FF3391EF03F3200AF9984 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3331EF03F3100AF9984 /* DataType.swift */; };
-		EE5FF33A1EF03F3200AF9984 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3341EF03F3100AF9984 /* Author.swift */; };
-		EE5FF33B1EF03F3200AF9984 /* HeaderFileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */; };
-		EE5FF33C1EF03F3200AF9984 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3361EF03F3200AF9984 /* Constructor.swift */; };
-		EE5FF33D1EF03F3200AF9984 /* UtilityMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */; };
-		EE5FF34E1EF0403B00AF9984 /* Swift-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */; };
-		EE5FF34F1EF0403B00AF9984 /* Swift-Struct-Gloss.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */; };
-		EE5FF3501EF0403B00AF9984 /* ObjectiveC-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */; };
-		EE5FF3511EF0403B00AF9984 /* Java-Android Gson.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */; };
-		EE5FF3521EF0403B00AF9984 /* Swift-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3431EF0403A00AF9984 /* Swift-Class.json */; };
-		EE5FF3531EF0403B00AF9984 /* Java-Android.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3441EF0403A00AF9984 /* Java-Android.json */; };
-		EE5FF3541EF0403B00AF9984 /* ObjectiveC-Mac.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */; };
-		EE5FF3551EF0403B00AF9984 /* Swift-Mappable.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */; };
-		EE5FF3561EF0403B00AF9984 /* Java-Android Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */; };
-		EE5FF3571EF0403B00AF9984 /* ObjectiveC-CoreData-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */; };
-		EE5FF3581EF0403B00AF9984 /* Swift-Struct.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */; };
-		EE5FF3591EF0403B00AF9984 /* SwiftyJSON-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */; };
-		EE5FF35A1EF0403B00AF9984 /* Swift-Struct-Unbox.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */; };
-		EE5FF35B1EF0403B00AF9984 /* Swift-CoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */; };
-		EE5FF35C1EF0403B00AF9984 /* ObjectiveC-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Struct-Gloss.json"; sourceTree = "<group>"; };
+		EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-Realm.json"; sourceTree = "<group>"; };
+		EE4692841EF173EA002A763C /* Java-Android Gson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android Gson.json"; sourceTree = "<group>"; };
+		EE4692851EF173EA002A763C /* Java-Android Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android Realm.json"; sourceTree = "<group>"; };
+		EE4692861EF173EA002A763C /* Java-Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android.json"; sourceTree = "<group>"; };
+		EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-CoreData-iOS.json"; sourceTree = "<group>"; };
+		EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-iOS.json"; sourceTree = "<group>"; };
+		EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-Mac.json"; sourceTree = "<group>"; };
+		EE46928A1EF173EA002A763C /* Swift-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Realm.json"; sourceTree = "<group>"; };
+		EE46928B1EF173EA002A763C /* Swift-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Class.json"; sourceTree = "<group>"; };
+		EE46928C1EF173EA002A763C /* Swift-CoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-CoreData.json"; sourceTree = "<group>"; };
+		EE46928D1EF173EA002A763C /* Swift-Mappable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Mappable.json"; sourceTree = "<group>"; };
+		EE46928E1EF173EA002A763C /* Swift-Struct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Struct.json"; sourceTree = "<group>"; };
+		EE46928F1EF173EA002A763C /* Swift-Struct-Unbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Struct-Unbox.json"; sourceTree = "<group>"; };
+		EE4692901EF173EA002A763C /* SwiftyJSON-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "SwiftyJSON-Class.json"; sourceTree = "<group>"; };
+		EE4692A01EF173F7002A763C /* Constructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		EE4692A11EF173F7002A763C /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		EE4692A21EF173F7002A763C /* LangModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangModel.swift; sourceTree = "<group>"; };
+		EE4692A31EF173F7002A763C /* UtilityMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityMethod.swift; sourceTree = "<group>"; };
+		EE4692A41EF173F7002A763C /* HeaderFileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFileData.swift; sourceTree = "<group>"; };
+		EE4692A51EF173F7002A763C /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		EE4692AC1EF1740C002A763C /* FileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRepresenter.swift; sourceTree = "<group>"; };
+		EE4692AD1EF1740C002A763C /* HeaderFileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFileRepresenter.swift; sourceTree = "<group>"; };
+		EE4692AE1EF1740C002A763C /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		EE4692AF1EF1740C002A763C /* SharedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		EE4692B01EF1740C002A763C /* FileContentBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileContentBuilder.swift; sourceTree = "<group>"; };
+		EE4692B61EF17421002A763C /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		EE4692B71EF17421002A763C /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		EE4692B81EF17421002A763C /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		EE4692B91EF17421002A763C /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		EE4692BD1EF17434002A763C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EE4692BE1EF17434002A763C /* FilePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePreviewCell.swift; sourceTree = "<group>"; };
+		EE4692BF1EF17434002A763C /* SharedUtilityMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUtilityMethods.swift; sourceTree = "<group>"; };
+		EE4692C01EF17434002A763C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		EE5FF3011EF027C000AF9984 /* ClientCodeGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientCodeGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5FF3041EF027C100AF9984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5FF3061EF027C100AF9984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,40 +88,6 @@
 		EE5FF30D1EF027C100AF9984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE5FF30E1EF027C100AF9984 /* ClientCodeGen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClientCodeGen.entitlements; sourceTree = "<group>"; };
 		EE5FF3161EF03D2F00AF9984 /* ClientCodeGen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClientCodeGen-Bridging-Header.h"; sourceTree = "<group>"; };
-		EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoodleLineNumberView.m; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberView.m"; sourceTree = "<group>"; };
-		EE5FF3181EF03D3000AF9984 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoodleLineNumberView.h; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberView.h"; sourceTree = "<group>"; };
-		EE5FF3191EF03D3000AF9984 /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoodleLineNumberMarker.h; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberMarker.h"; sourceTree = "<group>"; };
-		EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoodleLineNumberMarker.m; path = "../../../../Learning/JSONExport-ApiClient/JSONExport/NoodleLineNumberMarker.m"; sourceTree = "<group>"; };
-		EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedUtilityMethods.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/SharedUtilityMethods.swift"; sourceTree = "<group>"; };
-		EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilePreviewCell.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FilePreviewCell.swift"; sourceTree = "<group>"; };
-		EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/ApiClient.swift"; sourceTree = "<group>"; };
-		EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/StringExtension.swift"; sourceTree = "<group>"; };
-		EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileRepresenter.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FileRepresenter.swift"; sourceTree = "<group>"; };
-		EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedConstants.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/SharedConstants.swift"; sourceTree = "<group>"; };
-		EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileContentBuilder.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/FileContentBuilder.swift"; sourceTree = "<group>"; };
-		EE5FF32B1EF03F1A00AF9984 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Property.swift"; sourceTree = "<group>"; };
-		EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderFileRepresenter.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/HeaderFileRepresenter.swift"; sourceTree = "<group>"; };
-		EE5FF3321EF03F3100AF9984 /* LangModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LangModel.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/LangModel.swift"; sourceTree = "<group>"; };
-		EE5FF3331EF03F3100AF9984 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataType.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/DataType.swift"; sourceTree = "<group>"; };
-		EE5FF3341EF03F3100AF9984 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Author.swift"; sourceTree = "<group>"; };
-		EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderFileData.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/HeaderFileData.swift"; sourceTree = "<group>"; };
-		EE5FF3361EF03F3200AF9984 /* Constructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Constructor.swift"; sourceTree = "<group>"; };
-		EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UtilityMethod.swift; path = "../../../Learning/JSONExport-ApiClient/JSONExport/UtilityMethod.swift"; sourceTree = "<group>"; };
-		EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Realm.json"; sourceTree = "<group>"; };
-		EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct-Gloss.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct-Gloss.json"; sourceTree = "<group>"; };
-		EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-iOS.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-iOS.json"; sourceTree = "<group>"; };
-		EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android Gson.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android Gson.json"; sourceTree = "<group>"; };
-		EE5FF3431EF0403A00AF9984 /* Swift-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Class.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Class.json"; sourceTree = "<group>"; };
-		EE5FF3441EF0403A00AF9984 /* Java-Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android.json"; sourceTree = "<group>"; };
-		EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-Mac.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-Mac.json"; sourceTree = "<group>"; };
-		EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Mappable.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Mappable.json"; sourceTree = "<group>"; };
-		EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Java-Android Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Java-Android Realm.json"; sourceTree = "<group>"; };
-		EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-CoreData-iOS.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-CoreData-iOS.json"; sourceTree = "<group>"; };
-		EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct.json"; sourceTree = "<group>"; };
-		EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "SwiftyJSON-Class.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/SwiftyJSON-Class.json"; sourceTree = "<group>"; };
-		EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct-Unbox.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-Struct-Unbox.json"; sourceTree = "<group>"; };
-		EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-CoreData.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/Swift-CoreData.json"; sourceTree = "<group>"; };
-		EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-Realm.json"; path = "../../../Learning/JSONExport-ApiClient/JSONExport/Supported Languages/ObjectiveC-Realm.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +120,13 @@
 		EE5FF3031EF027C000AF9984 /* ClientCodeGen */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF33E1EF0402D00AF9984 /* Supported Languages */,
-				EE5FF31F1EF03EED00AF9984 /* Lang data models */,
-				EE5FF31E1EF03EC800AF9984 /* File content generators */,
 				EE5FF3141EF03CDF00AF9984 /* Third party libraries */,
+				EE5FF31F1EF03EED00AF9984 /* Models */,
+				EE5FF33E1EF0402D00AF9984 /* Supported Languages */,
 				EE5FF31D1EF03EBD00AF9984 /* Misc */,
 				EE5FF3041EF027C100AF9984 /* AppDelegate.swift */,
 				EE5FF3061EF027C100AF9984 /* ViewController.swift */,
+				EE5FF31E1EF03EC800AF9984 /* File content generators */,
 				EE5FF3081EF027C100AF9984 /* Assets.xcassets */,
 				EE5FF30A1EF027C100AF9984 /* Main.storyboard */,
 				EE5FF30D1EF027C100AF9984 /* Info.plist */,
@@ -146,10 +146,10 @@
 		EE5FF3151EF03D0D00AF9984 /* Noodle Line Number */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF3191EF03D3000AF9984 /* NoodleLineNumberMarker.h */,
-				EE5FF31A1EF03D3000AF9984 /* NoodleLineNumberMarker.m */,
-				EE5FF3181EF03D3000AF9984 /* NoodleLineNumberView.h */,
-				EE5FF3171EF03D3000AF9984 /* NoodleLineNumberView.m */,
+				EE4692B61EF17421002A763C /* NoodleLineNumberMarker.h */,
+				EE4692B71EF17421002A763C /* NoodleLineNumberMarker.m */,
+				EE4692B81EF17421002A763C /* NoodleLineNumberView.h */,
+				EE4692B91EF17421002A763C /* NoodleLineNumberView.m */,
 				EE5FF3161EF03D2F00AF9984 /* ClientCodeGen-Bridging-Header.h */,
 			);
 			path = "Noodle Line Number";
@@ -158,10 +158,10 @@
 		EE5FF31D1EF03EBD00AF9984 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF3231EF03F0D00AF9984 /* StringExtension.swift */,
-				EE5FF3211EF03F0C00AF9984 /* FilePreviewCell.swift */,
-				EE5FF3201EF03F0C00AF9984 /* SharedUtilityMethods.swift */,
-				EE5FF3221EF03F0D00AF9984 /* ApiClient.swift */,
+				EE4692BD1EF17434002A763C /* StringExtension.swift */,
+				EE4692BE1EF17434002A763C /* FilePreviewCell.swift */,
+				EE4692BF1EF17434002A763C /* SharedUtilityMethods.swift */,
+				EE4692C01EF17434002A763C /* ApiClient.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -169,46 +169,47 @@
 		EE5FF31E1EF03EC800AF9984 /* File content generators */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF3281EF03F1A00AF9984 /* FileRepresenter.swift */,
-				EE5FF32C1EF03F1A00AF9984 /* HeaderFileRepresenter.swift */,
-				EE5FF32B1EF03F1A00AF9984 /* Property.swift */,
-				EE5FF3291EF03F1A00AF9984 /* SharedConstants.swift */,
-				EE5FF32A1EF03F1A00AF9984 /* FileContentBuilder.swift */,
+				EE4692AC1EF1740C002A763C /* FileRepresenter.swift */,
+				EE4692AD1EF1740C002A763C /* HeaderFileRepresenter.swift */,
+				EE4692AE1EF1740C002A763C /* Property.swift */,
+				EE4692AF1EF1740C002A763C /* SharedConstants.swift */,
+				EE4692B01EF1740C002A763C /* FileContentBuilder.swift */,
 			);
 			path = "File content generators";
 			sourceTree = "<group>";
 		};
-		EE5FF31F1EF03EED00AF9984 /* Lang data models */ = {
+		EE5FF31F1EF03EED00AF9984 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF3361EF03F3200AF9984 /* Constructor.swift */,
-				EE5FF3331EF03F3100AF9984 /* DataType.swift */,
-				EE5FF3321EF03F3100AF9984 /* LangModel.swift */,
-				EE5FF3371EF03F3200AF9984 /* UtilityMethod.swift */,
-				EE5FF3351EF03F3100AF9984 /* HeaderFileData.swift */,
-				EE5FF3341EF03F3100AF9984 /* Author.swift */,
+				EE4692A01EF173F7002A763C /* Constructor.swift */,
+				EE4692A11EF173F7002A763C /* DataType.swift */,
+				EE4692A21EF173F7002A763C /* LangModel.swift */,
+				EE4692A31EF173F7002A763C /* UtilityMethod.swift */,
+				EE4692A41EF173F7002A763C /* HeaderFileData.swift */,
+				EE4692A51EF173F7002A763C /* Author.swift */,
 			);
+			name = Models;
 			path = "Lang data models";
 			sourceTree = "<group>";
 		};
 		EE5FF33E1EF0402D00AF9984 /* Supported Languages */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FF3401EF0403A00AF9984 /* Swift-Struct-Gloss.json */,
-				EE5FF34D1EF0403B00AF9984 /* ObjectiveC-Realm.json */,
-				EE5FF3421EF0403A00AF9984 /* Java-Android Gson.json */,
-				EE5FF3471EF0403A00AF9984 /* Java-Android Realm.json */,
-				EE5FF3441EF0403A00AF9984 /* Java-Android.json */,
-				EE5FF3481EF0403A00AF9984 /* ObjectiveC-CoreData-iOS.json */,
-				EE5FF3411EF0403A00AF9984 /* ObjectiveC-iOS.json */,
-				EE5FF3451EF0403A00AF9984 /* ObjectiveC-Mac.json */,
-				EE5FF33F1EF0403A00AF9984 /* Swift-Realm.json */,
-				EE5FF3431EF0403A00AF9984 /* Swift-Class.json */,
-				EE5FF34C1EF0403B00AF9984 /* Swift-CoreData.json */,
-				EE5FF3461EF0403A00AF9984 /* Swift-Mappable.json */,
-				EE5FF3491EF0403B00AF9984 /* Swift-Struct.json */,
-				EE5FF34B1EF0403B00AF9984 /* Swift-Struct-Unbox.json */,
-				EE5FF34A1EF0403B00AF9984 /* SwiftyJSON-Class.json */,
+				EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */,
+				EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */,
+				EE4692841EF173EA002A763C /* Java-Android Gson.json */,
+				EE4692851EF173EA002A763C /* Java-Android Realm.json */,
+				EE4692861EF173EA002A763C /* Java-Android.json */,
+				EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */,
+				EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */,
+				EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */,
+				EE46928A1EF173EA002A763C /* Swift-Realm.json */,
+				EE46928B1EF173EA002A763C /* Swift-Class.json */,
+				EE46928C1EF173EA002A763C /* Swift-CoreData.json */,
+				EE46928D1EF173EA002A763C /* Swift-Mappable.json */,
+				EE46928E1EF173EA002A763C /* Swift-Struct.json */,
+				EE46928F1EF173EA002A763C /* Swift-Struct-Unbox.json */,
+				EE4692901EF173EA002A763C /* SwiftyJSON-Class.json */,
 			);
 			path = "Supported Languages";
 			sourceTree = "<group>";
@@ -272,23 +273,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5FF3591EF0403B00AF9984 /* SwiftyJSON-Class.json in Resources */,
-				EE5FF3521EF0403B00AF9984 /* Swift-Class.json in Resources */,
-				EE5FF3531EF0403B00AF9984 /* Java-Android.json in Resources */,
-				EE5FF34E1EF0403B00AF9984 /* Swift-Realm.json in Resources */,
+				EE46929A1EF173EA002A763C /* Swift-Class.json in Resources */,
+				EE46929C1EF173EA002A763C /* Swift-Mappable.json in Resources */,
+				EE4692951EF173EA002A763C /* Java-Android.json in Resources */,
 				EE5FF3091EF027C100AF9984 /* Assets.xcassets in Resources */,
-				EE5FF3561EF0403B00AF9984 /* Java-Android Realm.json in Resources */,
-				EE5FF35A1EF0403B00AF9984 /* Swift-Struct-Unbox.json in Resources */,
-				EE5FF35C1EF0403B00AF9984 /* ObjectiveC-Realm.json in Resources */,
+				EE46929D1EF173EA002A763C /* Swift-Struct.json in Resources */,
+				EE4692991EF173EA002A763C /* Swift-Realm.json in Resources */,
+				EE4692961EF173EA002A763C /* ObjectiveC-CoreData-iOS.json in Resources */,
+				EE46929E1EF173EA002A763C /* Swift-Struct-Unbox.json in Resources */,
+				EE4692981EF173EA002A763C /* ObjectiveC-Mac.json in Resources */,
+				EE4692931EF173EA002A763C /* Java-Android Gson.json in Resources */,
+				EE4692941EF173EA002A763C /* Java-Android Realm.json in Resources */,
+				EE4692921EF173EA002A763C /* ObjectiveC-Realm.json in Resources */,
+				EE4692971EF173EA002A763C /* ObjectiveC-iOS.json in Resources */,
+				EE4692911EF173EA002A763C /* Swift-Struct-Gloss.json in Resources */,
+				EE46929F1EF173EA002A763C /* SwiftyJSON-Class.json in Resources */,
+				EE46929B1EF173EA002A763C /* Swift-CoreData.json in Resources */,
 				EE5FF30C1EF027C100AF9984 /* Main.storyboard in Resources */,
-				EE5FF35B1EF0403B00AF9984 /* Swift-CoreData.json in Resources */,
-				EE5FF3581EF0403B00AF9984 /* Swift-Struct.json in Resources */,
-				EE5FF3551EF0403B00AF9984 /* Swift-Mappable.json in Resources */,
-				EE5FF3541EF0403B00AF9984 /* ObjectiveC-Mac.json in Resources */,
-				EE5FF3511EF0403B00AF9984 /* Java-Android Gson.json in Resources */,
-				EE5FF3501EF0403B00AF9984 /* ObjectiveC-iOS.json in Resources */,
-				EE5FF3571EF0403B00AF9984 /* ObjectiveC-CoreData-iOS.json in Resources */,
-				EE5FF34F1EF0403B00AF9984 /* Swift-Struct-Gloss.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +300,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5FF32D1EF03F1B00AF9984 /* FileRepresenter.swift in Sources */,
-				EE5FF3391EF03F3200AF9984 /* DataType.swift in Sources */,
-				EE5FF3261EF03F0D00AF9984 /* ApiClient.swift in Sources */,
-				EE5FF31B1EF03D3100AF9984 /* NoodleLineNumberView.m in Sources */,
-				EE5FF3381EF03F3200AF9984 /* LangModel.swift in Sources */,
-				EE5FF3311EF03F1B00AF9984 /* HeaderFileRepresenter.swift in Sources */,
+				EE4692B11EF1740C002A763C /* FileRepresenter.swift in Sources */,
+				EE4692B51EF1740C002A763C /* FileContentBuilder.swift in Sources */,
+				EE4692C31EF17434002A763C /* SharedUtilityMethods.swift in Sources */,
 				EE5FF3071EF027C100AF9984 /* ViewController.swift in Sources */,
-				EE5FF3251EF03F0D00AF9984 /* FilePreviewCell.swift in Sources */,
-				EE5FF3271EF03F0D00AF9984 /* StringExtension.swift in Sources */,
-				EE5FF33B1EF03F3200AF9984 /* HeaderFileData.swift in Sources */,
-				EE5FF3301EF03F1B00AF9984 /* Property.swift in Sources */,
-				EE5FF33D1EF03F3200AF9984 /* UtilityMethod.swift in Sources */,
-				EE5FF33A1EF03F3200AF9984 /* Author.swift in Sources */,
-				EE5FF32E1EF03F1B00AF9984 /* SharedConstants.swift in Sources */,
+				EE4692BC1EF17421002A763C /* NoodleLineNumberView.m in Sources */,
+				EE4692C11EF17434002A763C /* StringExtension.swift in Sources */,
+				EE4692B31EF1740C002A763C /* Property.swift in Sources */,
+				EE4692AA1EF173F7002A763C /* HeaderFileData.swift in Sources */,
+				EE4692B41EF1740C002A763C /* SharedConstants.swift in Sources */,
+				EE4692AB1EF173F7002A763C /* Author.swift in Sources */,
+				EE4692BB1EF17421002A763C /* NoodleLineNumberMarker.m in Sources */,
+				EE4692C21EF17434002A763C /* FilePreviewCell.swift in Sources */,
+				EE4692C41EF17434002A763C /* ApiClient.swift in Sources */,
+				EE4692A71EF173F7002A763C /* DataType.swift in Sources */,
+				EE4692A81EF173F7002A763C /* LangModel.swift in Sources */,
+				EE4692A91EF173F7002A763C /* UtilityMethod.swift in Sources */,
 				EE5FF3051EF027C100AF9984 /* AppDelegate.swift in Sources */,
-				EE5FF33C1EF03F3200AF9984 /* Constructor.swift in Sources */,
-				EE5FF3241EF03F0D00AF9984 /* SharedUtilityMethods.swift in Sources */,
-				EE5FF32F1EF03F1B00AF9984 /* FileContentBuilder.swift in Sources */,
-				EE5FF31C1EF03D3100AF9984 /* NoodleLineNumberMarker.m in Sources */,
+				EE4692B21EF1740C002A763C /* HeaderFileRepresenter.swift in Sources */,
+				EE4692A61EF173F7002A763C /* Constructor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +448,7 @@
 				DEVELOPMENT_TEAM = QWD8B2FB9G;
 				INFOPLIST_FILE = ClientCodeGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vimask.ClientCodeGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClientCodeGen/Third party libraries/Noodle Line Number/ClientCodeGen-Bridging-Header.h";
@@ -465,6 +467,7 @@
 				DEVELOPMENT_TEAM = QWD8B2FB9G;
 				INFOPLIST_FILE = ClientCodeGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vimask.ClientCodeGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClientCodeGen/Third party libraries/Noodle Line Number/ClientCodeGen-Bridging-Header.h";
@@ -491,6 +494,7 @@
 				EE5FF3131EF027C100AF9984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

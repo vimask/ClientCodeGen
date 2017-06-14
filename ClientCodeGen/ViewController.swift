@@ -10,11 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTableViewDelegate, NSTableViewDataSource, NSTextViewDelegate {
     
+
     //Shows the list of files' preview
     @IBOutlet weak var tableView: NSTableView!
     
-    //Connected to the top right corner to show the current parsing status
-    @IBOutlet weak var statusTextField: NSTextField!
+    //Connected to the status label
+    @IBOutlet weak var statusLabel: NSTextField!
     
     //Connected to the save button
     @IBOutlet weak var saveButton: NSButton!
@@ -45,12 +46,6 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     
     //Connected to the languages pop up
     @IBOutlet weak var languagesPopup: NSPopUpButton!
-    
-    //Connected to the top constraint of the JSON input text view
-    @IBOutlet weak var jsonInputToConstraint: NSLayoutConstraint!
-    
-    //Connected to the Call API View
-    @IBOutlet weak var callApiView: NSView!
     
     //Connected to the http method pop up
     @IBOutlet weak var httpMethodPopup: NSPopUpButton!
@@ -210,36 +205,28 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     
     //MARK: - Handlind events
     
-    @IBAction func openJSONFiles(sender: AnyObject)
-    {
-        let oPanel: NSOpenPanel = NSOpenPanel()
-        oPanel.canChooseDirectories = false
-        oPanel.canChooseFiles = true
-        oPanel.allowsMultipleSelection = false
-        oPanel.allowedFileTypes = ["json","JSON"]
-        oPanel.prompt = "Choose JSON file"
-        
-        oPanel.beginSheetModal(for: self.view.window!, completionHandler: { (button : Int) -> Void in
-            if button == NSFileHandlingPanelOKButton{
-                
-                let jsonPath = oPanel.urls.first!.path
-                let fileHandle = FileHandle(forReadingAtPath: jsonPath)
-                let urlStr:String  = oPanel.urls.first!.lastPathComponent
-                self.classNameField.stringValue = urlStr.replacingOccurrences(of: ".json", with: "")
-                self.parseJSONData(jsonData: (fileHandle!.readDataToEndOfFile() as NSData!) as Data!)
-                
-            }
-        })
-    }
+//    @IBAction func openJSONFiles(sender: AnyObject)
+//    {
+//        let oPanel: NSOpenPanel = NSOpenPanel()
+//        oPanel.canChooseDirectories = false
+//        oPanel.canChooseFiles = true
+//        oPanel.allowsMultipleSelection = false
+//        oPanel.allowedFileTypes = ["json","JSON"]
+//        oPanel.prompt = "Choose JSON file"
+//
+//        oPanel.beginSheetModal(for: self.view.window!, completionHandler: {(result) in
+//            if result == NSApplication.ModalResponse.OK {
+//
+//                let jsonPath = oPanel.urls.first!.path
+//                let fileHandle = FileHandle(forReadingAtPath: jsonPath)
+//                let urlStr:String  = oPanel.urls.first!.lastPathComponent
+//                self.classNameField.stringValue = urlStr.replacingOccurrences(of: ".json", with: "")
+//                self.parseJSONData(jsonData: (fileHandle!.readDataToEndOfFile() as NSData!) as Data!)
+//
+//            }
+//        })
+//    }
     
-    @IBAction func toggleShowCallAPIView(_ sender: AnyObject)
-    {
-        let isUsingAPICall = (sender as! NSButton).state == NSControl.StateValue.onState
-        
-        self.jsonInputToConstraint.constant = isUsingAPICall ? 300 : 8
-        self.callApiView.isHidden = !isUsingAPICall
-        
-    }
     
     @IBAction func httpMethodChanged(_ sender: AnyObject)
     {
@@ -302,7 +289,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
             }
         }
         
-        var strParams = bodyText.string!
+        var strParams = bodyText.string
         if strParams.characters.count != 0{
             strParams = stringByRemovingControlCharacters(strParams)
             if let data = strParams.data(using: String.Encoding.utf8){
@@ -391,7 +378,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         ApiClient().makeGetRequest(strURL: url, headers: header) { (success, responseString) in
             print(success)
             if success {
-                self.sourceText.string  = responseString
+                self.sourceText.string  = responseString!
             }
         }
     }
@@ -443,8 +430,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         openPanel.canChooseDirectories = true
         openPanel.canCreateDirectories = true
         openPanel.prompt = "Choose"
-        openPanel.beginSheetModal(for: self.view.window!, completionHandler: { (button : Int) -> Void in
-            if button == NSFileHandlingPanelOKButton{
+        openPanel.beginSheetModal(for: self.view.window!, completionHandler: {(result) in
+            if result == NSApplication.ModalResponse.OK {
                 
                 self.saveToPath(openPanel.url!.path)
                 
@@ -520,8 +507,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     func showErrorStatus(_ errorMessage: String)
     {
         
-        statusTextField.textColor = NSColor.red
-        statusTextField.stringValue = errorMessage
+        statusLabel.textColor = NSColor.red
+        statusLabel.stringValue = errorMessage
     }
     
     /**
@@ -530,8 +517,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     func showSuccessStatus(_ successMessage: String)
     {
         
-        statusTextField.textColor = NSColor.green
-        statusTextField.stringValue = successMessage
+        statusLabel.textColor = NSColor.green
+        statusLabel.stringValue = successMessage
     }
     
     
@@ -543,7 +530,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     func generateClasses()
     {
         saveButton.isEnabled = false
-        var str = sourceText.string!
+        var str = sourceText.string
         
         if str.characters.count == 0{
             //Nothing to do, just clear any generated files
@@ -631,7 +618,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     //MARK: - NSTableViewDelegate
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?
     {
-        let cell = tableView.make(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "fileCell"), owner: self) as! FilePreviewCell
+        let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "fileCell"), owner: self) as! FilePreviewCell
         let file = files[row]
         cell.file = file
         
