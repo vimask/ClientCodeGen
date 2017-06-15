@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EE4692911EF173EA002A763C /* Swift-Struct-Gloss.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */; };
-		EE4692921EF173EA002A763C /* ObjectiveC-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */; };
-		EE4692931EF173EA002A763C /* Java-Android Gson.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692841EF173EA002A763C /* Java-Android Gson.json */; };
-		EE4692941EF173EA002A763C /* Java-Android Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692851EF173EA002A763C /* Java-Android Realm.json */; };
-		EE4692951EF173EA002A763C /* Java-Android.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692861EF173EA002A763C /* Java-Android.json */; };
-		EE4692961EF173EA002A763C /* ObjectiveC-CoreData-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */; };
-		EE4692971EF173EA002A763C /* ObjectiveC-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */; };
-		EE4692981EF173EA002A763C /* ObjectiveC-Mac.json in Resources */ = {isa = PBXBuildFile; fileRef = EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */; };
 		EE4692991EF173EA002A763C /* Swift-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928A1EF173EA002A763C /* Swift-Realm.json */; };
 		EE46929A1EF173EA002A763C /* Swift-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928B1EF173EA002A763C /* Swift-Class.json */; };
 		EE46929B1EF173EA002A763C /* Swift-CoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE46928C1EF173EA002A763C /* Swift-CoreData.json */; };
@@ -47,13 +40,6 @@
 
 /* Begin PBXFileReference section */
 		EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Struct-Gloss.json"; sourceTree = "<group>"; };
-		EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-Realm.json"; sourceTree = "<group>"; };
-		EE4692841EF173EA002A763C /* Java-Android Gson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android Gson.json"; sourceTree = "<group>"; };
-		EE4692851EF173EA002A763C /* Java-Android Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android Realm.json"; sourceTree = "<group>"; };
-		EE4692861EF173EA002A763C /* Java-Android.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Java-Android.json"; sourceTree = "<group>"; };
-		EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-CoreData-iOS.json"; sourceTree = "<group>"; };
-		EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-iOS.json"; sourceTree = "<group>"; };
-		EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ObjectiveC-Mac.json"; sourceTree = "<group>"; };
 		EE46928A1EF173EA002A763C /* Swift-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Realm.json"; sourceTree = "<group>"; };
 		EE46928B1EF173EA002A763C /* Swift-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-Class.json"; sourceTree = "<group>"; };
 		EE46928C1EF173EA002A763C /* Swift-CoreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Swift-CoreData.json"; sourceTree = "<group>"; };
@@ -196,13 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				EE4692821EF173EA002A763C /* Swift-Struct-Gloss.json */,
-				EE4692831EF173EA002A763C /* ObjectiveC-Realm.json */,
-				EE4692841EF173EA002A763C /* Java-Android Gson.json */,
-				EE4692851EF173EA002A763C /* Java-Android Realm.json */,
-				EE4692861EF173EA002A763C /* Java-Android.json */,
-				EE4692871EF173EA002A763C /* ObjectiveC-CoreData-iOS.json */,
-				EE4692881EF173EA002A763C /* ObjectiveC-iOS.json */,
-				EE4692891EF173EA002A763C /* ObjectiveC-Mac.json */,
 				EE46928A1EF173EA002A763C /* Swift-Realm.json */,
 				EE46928B1EF173EA002A763C /* Swift-Class.json */,
 				EE46928C1EF173EA002A763C /* Swift-CoreData.json */,
@@ -275,17 +254,10 @@
 			files = (
 				EE46929A1EF173EA002A763C /* Swift-Class.json in Resources */,
 				EE46929C1EF173EA002A763C /* Swift-Mappable.json in Resources */,
-				EE4692951EF173EA002A763C /* Java-Android.json in Resources */,
 				EE5FF3091EF027C100AF9984 /* Assets.xcassets in Resources */,
 				EE46929D1EF173EA002A763C /* Swift-Struct.json in Resources */,
 				EE4692991EF173EA002A763C /* Swift-Realm.json in Resources */,
-				EE4692961EF173EA002A763C /* ObjectiveC-CoreData-iOS.json in Resources */,
 				EE46929E1EF173EA002A763C /* Swift-Struct-Unbox.json in Resources */,
-				EE4692981EF173EA002A763C /* ObjectiveC-Mac.json in Resources */,
-				EE4692931EF173EA002A763C /* Java-Android Gson.json in Resources */,
-				EE4692941EF173EA002A763C /* Java-Android Realm.json in Resources */,
-				EE4692921EF173EA002A763C /* ObjectiveC-Realm.json in Resources */,
-				EE4692971EF173EA002A763C /* ObjectiveC-iOS.json in Resources */,
 				EE4692911EF173EA002A763C /* Swift-Struct-Gloss.json in Resources */,
 				EE46929F1EF173EA002A763C /* SwiftyJSON-Class.json in Resources */,
 				EE46929B1EF173EA002A763C /* Swift-CoreData.json in Resources */,

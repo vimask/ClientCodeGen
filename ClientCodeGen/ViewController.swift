@@ -64,10 +64,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     var selectedLang : LangModel!
     
     //Returns the title of the selected language in the languagesPopup
-    var selectedLanguageName : String
-    {
-        return languagesPopup.titleOfSelectedItem!
-    }
+    var selectedLanguageName : String = ""
+    
     
     //Returns the title of the selected method in the httpMethodPopup
     var selectedMethodName : String
@@ -94,7 +92,12 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         setHttpMethodPopup()
         setLanguagesSelection()
         loadLastSelectedLanguage()
+        loadLastUrl()
+        loadLastHeaders()
+        loadLastBody()
         updateUIFieldsForSelectedLanguage()
+        
+        self.selectedLanguageName = languagesPopup.titleOfSelectedItem ?? ""
     }
     
     
@@ -168,8 +171,36 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         }
         
         if langs[lastSelectedLanguage] != nil{
+            self.selectedLanguageName = languagesPopup.titleOfSelectedItem ?? ""
             languagesPopup.selectItem(withTitle: lastSelectedLanguage)
         }
+    }
+    
+    func loadLastUrl()
+    {
+        guard let urlString = UserDefaults.standard.value(forKey: "url") as? String else{
+            return
+        }
+        
+        self.requestUrlField.stringValue = urlString
+    }
+    
+    func loadLastHeaders()
+    {
+        guard let headerString = UserDefaults.standard.value(forKey: "header") as? String else{
+            return
+        }
+        
+        self.headerText.string = headerString
+    }
+    
+    func loadLastBody()
+    {
+        guard let bodyString = UserDefaults.standard.value(forKey: "body") as? String else{
+            return
+        }
+        
+        self.bodyText.string = bodyString
     }
     
     
@@ -191,9 +222,6 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         }
         
     }
-    
-    
-    
     
     // MARK: - parse the json file
     func parseJSONData(jsonData: Data!)
@@ -230,26 +258,15 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     
     @IBAction func httpMethodChanged(_ sender: AnyObject)
     {
-        
         print("selected method: \(self.selectedMethodName)")
-        self.bodyText.isEditable = true
-        self.bodyText.isHidden = false
-        
         switch self.selectedMethodName {
         case HttpMethod.get.rawValue:
             self.bodyText.isEditable = false
             self.bodyText.isHidden = true
             break
-        case HttpMethod.post.rawValue:
-            
-            break
-        case HttpMethod.put.rawValue:
-            
-            break
-        case HttpMethod.detele.rawValue:
-            
-            break
         default:
+            self.bodyText.isEditable = true
+            self.bodyText.isHidden = false
             break
         }
     }
@@ -266,6 +283,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
             self.showErrorStatus("please input request Url")
             return
         }
+        
+        UserDefaults.standard.set(self.requestUrlField.stringValue, forKey: "url")
         
         var strHeader = headerText.string
         if strHeader.characters.count != 0{
@@ -289,6 +308,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
             }
         }
         
+        UserDefaults.standard.set(strHeader, forKey: "header")
+        
         var strParams = bodyText.string
         if strParams.characters.count != 0{
             strParams = stringByRemovingControlCharacters(strParams)
@@ -311,6 +332,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
             }
         }
         
+        UserDefaults.standard.set(strParams, forKey: "body")
         
         switch self.selectedMethodName {
         case HttpMethod.get.rawValue:
@@ -361,9 +383,11 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     
     @IBAction func selectedLanguageChanged(_ sender: AnyObject)
     {
+        self.selectedLanguageName = languagesPopup.titleOfSelectedItem ?? ""
+        
         updateUIFieldsForSelectedLanguage()
         generateClasses()
-        UserDefaults.standard.set(selectedLanguageName, forKey: "selectedLanguage")
+        UserDefaults.standard.set(self.languagesPopup.titleOfSelectedItem, forKey: "selectedLanguage")
     }
     
     
@@ -373,29 +397,45 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     }
     
     //MARK: - Call HTTP Request
+    
     func get(url:String, header:[String:Any]?)
     {
         ApiClient().makeGetRequest(strURL: url, headers: header) { (success, responseString) in
-            print(success)
+            self.sourceText.string  = responseString ?? ""
             if success {
-                self.sourceText.string  = responseString!
+                self.generateClasses()
             }
         }
     }
     
     func post(url:String, params:[String:Any]?, header:[String:Any]?)
     {
-        
+        ApiClient().makePostRequest(strURL: url, body: params, headers: header) { (success, responseString) in
+            self.sourceText.string  = responseString ?? ""
+            if success {
+                self.generateClasses()
+            }
+        }
     }
     
     func put(url:String, params:[String:Any]?, header:[String:Any]?)
     {
-        
+        ApiClient().makePutRequest(strURL: url, body: params, headers: header) { (success, responseString) in
+            self.sourceText.string  = responseString ?? ""
+            if success {
+                self.generateClasses()
+            }
+        }
     }
     
     func delete(url:String, params:[String:Any]?, header:[String:Any]?)
     {
-        
+        ApiClient().makeDeleteRequest(strURL: url, body: params!, headers: header) { (success, responseString) in
+            self.sourceText.string  = responseString ?? ""
+            if success {
+                self.generateClasses()
+            }
+        }
     }
     
     //MARK: - NSTextDelegate
@@ -407,7 +447,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     //MARK: - Language selection handling
     func loadSelectedLanguageModel()
     {
-        selectedLang = langs[selectedLanguageName]
+        selectedLang = langs[self.selectedLanguageName]
         
     }
     
@@ -544,7 +584,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         }
         sourceText.isEditable = false
         //Do the lengthy process in background, it takes time with more complicated JSONs
-        runOnBackground {
+//        runOnBackground {
             str = stringByRemovingControlCharacters(str)
             if let data = str.data(using: String.Encoding.utf8){
                 var error : NSError?
@@ -557,6 +597,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
                     }else{
                         json = unionDictionaryFromArrayElements(jsonData as! NSArray)
                     }
+                    
                     self.loadSelectedLanguageModel()
                     self.files.removeAll(keepingCapacity: false)
                     let fileGenerator = self.prepareAndGetFilesBuilder()
@@ -585,7 +626,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
                     fatalError()
                 }
             }
-        }
+//        }
     }
     
     /**
@@ -596,12 +637,12 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
     func prepareAndGetFilesBuilder() -> FilesContentBuilder
     {
         let filesBuilder = FilesContentBuilder.instance
-        filesBuilder.includeConstructors = (generateConstructors.state == NSControl.StateValue.offState)
-        filesBuilder.includeUtilities = (generateUtilityMethods.state == NSControl.StateValue.offState)
-        filesBuilder.firstLine = firstLineField.stringValue
-        filesBuilder.lang = selectedLang!
-        filesBuilder.classPrefix = classPrefixField.stringValue
-        filesBuilder.parentClassName = parentClassName.stringValue
+        filesBuilder.includeConstructors = (self.generateConstructors.state == NSControl.StateValue.offState)
+        filesBuilder.includeUtilities = (self.generateUtilityMethods.state == NSControl.StateValue.offState)
+        filesBuilder.firstLine = self.firstLineField.stringValue
+        filesBuilder.lang = self.selectedLang!
+        filesBuilder.classPrefix = self.classPrefixField.stringValue
+        filesBuilder.parentClassName = self.parentClassName.stringValue
         return filesBuilder
     }
     

@@ -1112,6 +1112,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="toggleConstructors:" target="gVL-dp-bUR" id="ren-w6-SwZ"/>
+                                </connections>
                             </button>
                             <button horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="TDO-6s-Mrg">
                                 <rect key="frame" x="130" y="8" width="115" height="18"/>
@@ -1119,6 +1122,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="toggleUtilities:" target="gVL-dp-bUR" id="SVC-LT-G6k"/>
+                                </connections>
                             </button>
                             <textField verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="d4j-Th-1pK" userLabel="Root Class Name">
                                 <rect key="frame" x="251" y="6" width="130" height="22"/>
@@ -1130,6 +1136,9 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="rootClassNameChanged:" target="gVL-dp-bUR" id="zsV-Ik-bQY"/>
+                                </connections>
                             </textField>
                             <textField verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Sl3-5H-96h" userLabel="Parent Class Name">
                                 <rect key="frame" x="671" y="6" width="130" height="22"/>
@@ -1138,6 +1147,9 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="parentClassNameChanged:" target="gVL-dp-bUR" id="ZeT-Jo-DhL"/>
+                                </connections>
                             </textField>
                             <popUpButton horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AuN-ds-P0E" userLabel="Languages">
                                 <rect key="frame" x="809" y="4" width="556" height="26"/>
@@ -1152,6 +1164,9 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <connections>
+                                    <action selector="selectedLanguageChanged:" target="gVL-dp-bUR" id="zRe-cS-B6o"/>
+                                </connections>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-VB-v9W" userLabel="First line">
                                 <rect key="frame" x="531" y="6" width="130" height="22"/>
@@ -1161,6 +1176,9 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <accessibility description="Package name for example"/>
+                                <connections>
+                                    <action selector="firstLineChanged:" target="gVL-dp-bUR" id="JBY-vP-JjX"/>
+                                </connections>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-7L-pHb" userLabel="Classes Prefix">
                                 <rect key="frame" x="391" y="6" width="130" height="22"/>
@@ -1169,6 +1187,9 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="classPrefixChanged:" target="gVL-dp-bUR" id="CPT-fH-iu8"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <constraints>

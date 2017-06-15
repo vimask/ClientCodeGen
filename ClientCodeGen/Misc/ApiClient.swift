@@ -35,7 +35,7 @@ class ApiClient{
     
     
     // MARK: - Perform a POST Request
-    func makePostRequest(strURL: String, body: [String:Any], headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
+    func makePostRequest(strURL: String, body: [String:Any]?, headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
         let urlRequest = clientURLRequest(urlString: strURL,params: body, headers: headers)
         
         post(request: urlRequest) { (result, jsonString) in
@@ -43,11 +43,11 @@ class ApiClient{
                 onCompletion(result, jsonString)
             }
         }
-  
+        
     }
     
     // MARK: - Perform a PUST Request
-    func makePutRequest(strURL: String, body: [String:Any], headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
+    func makePutRequest(strURL: String, body: [String:Any]?, headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
         let urlRequest = clientURLRequest(urlString: strURL,params: body, headers: headers)
         
         put(request: urlRequest) { (result, jsonString) in
@@ -58,7 +58,7 @@ class ApiClient{
     }
     
     // MARK: - Perform a DELETE Request
-    func makeDeleteRequest(strURL: String, body: [String:Any], headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
+    func makeDeleteRequest(strURL: String, body: [String:Any]?, headers:[String:Any]? = nil, onCompletion: @escaping ServiceResponse) {
         let urlRequest = clientURLRequest(urlString: strURL,params: body, headers: headers)
         
         delete(request: urlRequest) { (result, jsonString) in
@@ -67,7 +67,7 @@ class ApiClient{
             }
         }
     }
-
+    
     // MARK: -
     private func clientURLRequest(urlString: String, params:[String:Any]? = nil, headers:[String:Any]? = nil) -> NSMutableURLRequest {
         
@@ -75,15 +75,20 @@ class ApiClient{
         
         //set params
         if let params = params {
-            var paramString = ""
-            for (key, value) in params {
-                let escapedKey = key.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
-                let escapedValue = (value as AnyObject).addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
-                paramString += "\(String(describing: escapedKey))=\(String(describing: escapedValue))&"
+            //            var paramString = ""
+            //            for (key, value) in params {
+            //                let escapedKey = key.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
+            //                let escapedValue = (value as AnyObject).addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
+            //                paramString += "\(String(describing: escapedKey))=\(String(describing: escapedValue))&"
+            //            }
+            do{
+                request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+                //                request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.addValue("application/json", forHTTPHeaderField: "Accept")
+            } catch let error as NSError {
+                print(error)
             }
-            
-            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-            request.httpBody = paramString.data(using: String.Encoding.utf8)
         }
         
         //set headers
@@ -144,7 +149,8 @@ class ApiClient{
                 }
                 
             }
-        }.resume()
+            }.resume()
     }
     
 }
+
